@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andrey40t67.github.io/catomania-website/sitemap.xml
+
+# Catomania - The Ultimate Cat Paradise Website
+# This robots.txt file ensures optimal indexing for search engines
+# Keywords: catomania, cats, cat games, interactive cat website, cat paradise
