@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐱 Catomania - The Ultimate Cat Paradise! 🐱</title>
-    <meta name="description" content="Catomania is the ultimate fun website about cats with interactive tasks, games, and mega cool styling! Join our cat-loving community!">
-    <meta name="keywords" content="cats, catomania, cat games, interactive, fun, feline, pets, cat tasks, cat paradise">
+    <title>🐱 Катомания - Лучший кошачий рай! 🐱</title>
+    <meta name="description" content="Catomania — это супер весёлый сайт про котов с интерактивными заданиями, играми и стильным оформлением! Присоединяйтесь к нашему сообществу любителей кошек!">
+    <meta name="keywords" content="коты, catomania, игры с котами, интерактив, весело, кошки, питомцы, задания, кошачий рай">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5CxPC90ZXh0Pjwvc3ZnPg==">
     <style>
         * {
@@ -15,18 +15,10 @@
         }
 
         body {
-            font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffd93d);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #1f1b24, #0d7377);
+            color: #f0f0f0;
             min-height: 100vh;
-            color: #333;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
         }
 
         .container {
@@ -38,26 +30,17 @@
         header {
             text-align: center;
             margin-bottom: 40px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            transform: translateY(0);
-            animation: bounce 2s ease-in-out infinite;
+            box-shadow: 0 0 15px rgba(0,0,0,0.8);
         }
 
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
 
         h1 {
             font-size: 4em;
-            color: #ff6b6b;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -65,25 +48,25 @@
 
         .subtitle {
             font-size: 1.5em;
-            color: #666;
+            color: #cccccc;
             margin-bottom: 20px;
         }
 
         .cat-counter {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             padding: 20px;
             margin: 20px 0;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
         }
 
         .section {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
             padding: 30px;
             margin: 30px 0;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
             transition: transform 0.3s ease;
         }
 
@@ -92,7 +75,7 @@
         }
 
         .section h2 {
-            color: #ff6b6b;
+            color: #ffd93d;
             font-size: 2.5em;
             margin-bottom: 20px;
             text-align: center;
@@ -106,19 +89,19 @@
         }
 
         .cat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
             padding: 25px;
             border-radius: 15px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.7);
         }
 
         .cat-card:hover {
             transform: scale(1.05) rotate(2deg);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
         }
 
         .cat-emoji {
@@ -128,7 +111,7 @@
         }
 
         .task-button {
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: #0d7377;
             color: white;
             border: none;
             padding: 15px 30px;
@@ -137,16 +120,18 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
         }
 
         .task-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            background: #14ffec;
+            color: #000;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.8);
         }
 
         .game-area {
-            background: #f8f9fa;
+            background: rgba(0,0,0,0.3);
             border-radius: 15px;
             padding: 20px;
             margin: 20px 0;
@@ -154,13 +139,13 @@
         }
 
         .cat-facts {
-            background: linear-gradient(45deg, #ffd93d, #ff6b6b);
-            color: white;
+            background: rgba(0,0,0,0.6);
+            color: #ffd93d;
             padding: 20px;
             border-radius: 15px;
             margin: 10px 0;
             font-size: 1.1em;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
         }
 
         .floating-cats {
@@ -191,14 +176,14 @@
         }
 
         .quiz-container {
-            background: #fff;
+            background: rgba(0,0,0,0.4);
             padding: 20px;
             border-radius: 15px;
             margin: 20px 0;
         }
 
         .quiz-option {
-            background: #e9ecef;
+            background: rgba(255,255,255,0.1);
             padding: 10px 20px;
             margin: 10px 0;
             border-radius: 10px;
@@ -207,14 +192,14 @@
         }
 
         .quiz-option:hover {
-            background: #4ecdc4;
-            color: white;
+            background: #14ffec;
+            color: #000;
         }
 
         footer {
             text-align: center;
             padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(0,0,0,0.75);
             border-radius: 20px;
             margin-top: 40px;
         }
@@ -231,101 +216,101 @@
     
     <div class="container">
         <header>
-            <h1>🐱 CATOMANIA 🐱</h1>
-            <p class="subtitle">The Ultimate Cat Paradise on the Internet!</p>
+            <h1>🐱 КАТОМАНИЯ 🐱</h1>
+            <p class="subtitle">Лучший кошачий рай в интернете!</p>
             <div class="cat-counter">
-                <p>😸 Cat Happiness Level: <span class="score" id="happiness">100</span>% 😸</p>
-                <p>🎯 Tasks Completed: <span class="score" id="tasks">0</span></p>
+                <p>😸 Уровень счастья кота: <span class="score" id="happiness">100</span>% 😸</p>
+                <p>🎯 Выполнено заданий: <span class="score" id="tasks">0</span></p>
             </div>
         </header>
 
         <section class="section">
-            <h2>🌟 Welcome to Cat Paradise! 🌟</h2>
+            <h2>🌟 Добро пожаловать в кошачий рай! 🌟</h2>
             <p style="font-size: 1.2em; text-align: center; line-height: 1.6;">
-                Welcome to the most EPIC cat website on the internet! Here you'll find amazing cat facts, 
-                interactive games, purr-fect tasks, and everything a cat lover could dream of! 
-                Get ready for a meow-gical experience! 🎉
+                Добро пожаловать на самый ЭПИЧНЫЙ сайт о котах в интернете! Здесь вы найдёте удивительные факты о котах,
+                интерактивные игры, мурр-задания и всё, о чём может мечтать любитель котов!
+                Приготовьтесь к мяу-волшебству! 🎉
             </p>
         </section>
 
         <section class="section">
-            <h2>🎮 Interactive Cat Tasks 🎮</h2>
+            <h2>🎮 Интерактивные задания с котами 🎮</h2>
             <div class="game-area">
-                <button class="task-button" onclick="feedCat()">🍽️ Feed the Cat</button>
-                <button class="task-button" onclick="petCat()">👋 Pet the Cat</button>
-                <button class="task-button" onclick="playWithCat()">🧶 Play with Yarn</button>
-                <button class="task-button" onclick="catNap()">😴 Cat Nap Time</button>
-                <button class="task-button" onclick="generateFact()">🧠 Random Cat Fact</button>
+                <button class="task-button" onclick="feedCat()">🍽️ Накормить кота</button>
+                <button class="task-button" onclick="petCat()">👋 Погладить кота</button>
+                <button class="task-button" onclick="playWithCat()">🧶 Поиграть с клубком</button>
+                <button class="task-button" onclick="catNap()">😴 Пора коту поспать</button>
+                <button class="task-button" onclick="generateFact()">🧠 Случайный факт о котах</button>
                 <div id="taskResult" style="margin-top: 20px; font-size: 1.3em;"></div>
             </div>
         </section>
 
         <section class="section">
-            <h2>🏆 Cat Knowledge Quiz 🏆</h2>
+            <h2>🏆 Викторина о кошках 🏆</h2>
             <div class="quiz-container" id="quizContainer">
-                <div id="question">How many hours do cats sleep per day on average?</div>
-                <div class="quiz-option" onclick="checkAnswer(this, false)">8-10 hours</div>
-                <div class="quiz-option" onclick="checkAnswer(this, true)">12-16 hours</div>
-                <div class="quiz-option" onclick="checkAnswer(this, false)">20-22 hours</div>
-                <div class="quiz-option" onclick="checkAnswer(this, false)">4-6 hours</div>
+                <div id="question">Сколько часов в среднем спят кошки в день?</div>
+                <div class="quiz-option" onclick="checkAnswer(this, false)">8–10 часов</div>
+                <div class="quiz-option" onclick="checkAnswer(this, true)">12–16 часов</div>
+                <div class="quiz-option" onclick="checkAnswer(this, false)">20–22 часа</div>
+                <div class="quiz-option" onclick="checkAnswer(this, false)">4–6 часов</div>
             </div>
         </section>
 
         <section class="section">
-            <h2>🐾 Meet Our Virtual Cats 🐾</h2>
+            <h2>🐾 Познакомьтесь с нашими виртуальными котами 🐾</h2>
             <div class="cat-grid">
                 <div class="cat-card" onclick="catInteraction('Whiskers')">
                     <span class="cat-emoji">😺</span>
-                    <h3>Whiskers</h3>
-                    <p>The friendly tabby who loves belly rubs!</p>
+                    <h3>Уиски</h3>
+                    <p>Дружелюбный полосатик, который обожает чесание животика!</p>
                 </div>
                 <div class="cat-card" onclick="catInteraction('Shadow')">
                     <span class="cat-emoji">😼</span>
-                    <h3>Shadow</h3>
-                    <p>The mysterious black cat with green eyes!</p>
+                    <h3>Шэдоу</h3>
+                    <p>Таинственный чёрный кот с зелёными глазами!</p>
                 </div>
                 <div class="cat-card" onclick="catInteraction('Fluffy')">
                     <span class="cat-emoji">😻</span>
-                    <h3>Fluffy</h3>
-                    <p>The Persian princess who loves treats!</p>
+                    <h3>Флаффи</h3>
+                    <p>Персидская принцесса, которая обожает лакомства!</p>
                 </div>
                 <div class="cat-card" onclick="catInteraction('Ginger')">
                     <span class="cat-emoji">🙀</span>
-                    <h3>Ginger</h3>
-                    <p>The energetic orange tabby always ready to play!</p>
+                    <h3>Джинджер</h3>
+                    <p>Энергичный рыжий кот, всегда готовый играть!</p>
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <h2>🎯 Daily Cat Challenges 🎯</h2>
+            <h2>🎯 Ежедневные котозадания 🎯</h2>
             <div class="game-area">
-                <h3>Today's Challenge: Find the Hidden Cat! 🕵️</h3>
-                <p>Click on the areas below to find where the cat is hiding!</p>
+                <h3>Задание дня: найди спрятавшегося кота! 🕵️</h3>
+                <p>Нажмите на зоны ниже, чтобы найти, где прячется кот!</p>
                 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 20px 0;">
-                    <div class="task-button" onclick="findCat(1)">🌳 Tree</div>
-                    <div class="task-button" onclick="findCat(2)">📦 Box</div>
-                    <div class="task-button" onclick="findCat(3)">🛏️ Bed</div>
-                    <div class="task-button" onclick="findCat(4)">🧺 Basket</div>
+                    <div class="task-button" onclick="findCat(1)">🌳 Дерево</div>
+                    <div class="task-button" onclick="findCat(2)">📦 Коробка</div>
+                    <div class="task-button" onclick="findCat(3)">🛏️ Кровать</div>
+                    <div class="task-button" onclick="findCat(4)">🧺 Корзина</div>
                 </div>
                 <div id="challengeResult"></div>
             </div>
         </section>
 
         <section class="section">
-            <h2>📚 Amazing Cat Facts 📚</h2>
+            <h2>📚 Удивительные факты о котах 📚</h2>
             <div id="factContainer">
                 <div class="cat-facts">
-                    🐱 Cats spend 70% of their lives sleeping - that's 13-16 hours a day!
+                    🐱 Коты проводят 70% своей жизни во сне — это 13–16 часов в день!
                 </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <h2>🎉 Thank You for Visiting Catomania! 🎉</h2>
-        <p>Share the love with fellow cat enthusiasts! Remember: A house is not a home without a cat! 🏠❤️🐱</p>
-        <p>Made with ❤️ and lots of purrs | © 2025 Catomania</p>
+        <h2>🎉 Спасибо, что посетили Катоманию! 🎉</h2>
+        <p>Делитесь любовью с другими кошколюбами! Помните: дом без кота — не дом! 🏠❤️🐱</p>
+        <p>Сделано с любовью и мурлыканьем | © 2025 Катомания</p>
     </footer>
 
     <script>
@@ -335,16 +320,16 @@
         let challengeCompleted = false;
 
         const catFacts = [
-            "🐱 A group of cats is called a 'clowder'!",
-            "🐾 Cats have five toes on their front paws and four on their back paws!",
-            "😴 Cats sleep for 12-16 hours per day!",
-            "👃 A cat's nose print is unique, just like a human's fingerprint!",
-            "🦘 Cats can jump up to six times their length!",
-            "👂 Cats can rotate their ears 180 degrees!",
-            "💖 Cats have a special scent organ called the Jacobson's organ!",
-            "🎵 Cats can make over 100 vocal sounds!",
-            "🌙 Cats are most active during dawn and dusk!",
-            "👀 Cats can see in the dark 6 times better than humans!"
+            "🐱 Группа кошек называется \"clowder\"!",
+            "🐾 У котов пять пальцев на передних лапах и четыре на задних!",
+            "😴 Коты спят по 12–16 часов в день!",
+            "👃 Носовой отпечаток кота уникален, как отпечаток пальца человека!",
+            "🦘 Коты могут прыгать на расстояние до шести своих длин!",
+            "👂 Кошки могут поворачивать уши на 180 градусов!",
+            "💖 У котов есть особый орган обоняния — орган Якобсона!",
+            "🎵 Коты могут издавать более 100 разных звуков!",
+            "🌙 Коты наиболее активны на рассвете и в сумерках!",
+            "👀 Коты видят в темноте в 6 раз лучше человека!"
         ];
 
         function updateCounters() {
@@ -355,7 +340,7 @@
         function feedCat() {
             happiness = Math.min(100, happiness + 10);
             tasksCompleted++;
-            document.getElementById('taskResult').innerHTML = "🍽️ <strong>Om nom nom!</strong> The cat is so happy and well-fed! +10 happiness! 😻";
+            document.getElementById('taskResult').innerHTML = "🍽️ <strong>Ням-ням!</strong> Котик сыт и счастлив! +10 к счастью! 😻";
             updateCounters();
             createFloatingCat();
         }
@@ -363,7 +348,7 @@
         function petCat() {
             happiness = Math.min(100, happiness + 15);
             tasksCompleted++;
-            document.getElementById('taskResult').innerHTML = "👋 <strong>Purr purr purr!</strong> The cat loves your gentle pets! +15 happiness! 🥰";
+            document.getElementById('taskResult').innerHTML = "👋 <strong>Мурр-мурр-мурр!</strong> Котик обожает ваши ласки! +15 к счастью! 🥰";
             updateCounters();
             createFloatingCat();
         }
@@ -371,7 +356,7 @@
         function playWithCat() {
             happiness = Math.min(100, happiness + 20);
             tasksCompleted++;
-            document.getElementById('taskResult').innerHTML = "🧶 <strong>Meow meow!</strong> Yarn time is the best time! The cat is having a blast! +20 happiness! 🎉";
+            document.getElementById('taskResult').innerHTML = "🧶 <strong>Мяу-мяу!</strong> Время игры с клубком – лучшее время! Кот в восторге! +20 к счастью! 🎉";
             updateCounters();
             createFloatingCat();
         }
@@ -379,7 +364,7 @@
         function catNap() {
             happiness = Math.min(100, happiness + 25);
             tasksCompleted++;
-            document.getElementById('taskResult').innerHTML = "😴 <strong>Zzz...</strong> The cat had the most peaceful nap ever! +25 happiness! 💤";
+            document.getElementById('taskResult').innerHTML = "😴 <strong>Хрр...</strong> Кот великолепно поспал! +25 к счастью! 💤";
             updateCounters();
             createFloatingCat();
         }
@@ -392,17 +377,17 @@
             newFact.innerHTML = randomFact;
             factContainer.appendChild(newFact);
             tasksCompleted++;
-            document.getElementById('taskResult').innerHTML = "🧠 <strong>Knowledge is power!</strong> You learned something new about cats! 📚";
+            document.getElementById('taskResult').innerHTML = "🧠 <strong>Знание – сила!</strong> Вы узнали что-то новое о котах! 📚";
             updateCounters();
         }
 
         function catInteraction(catName) {
             const responses = [
-                `😺 ${catName} purrs loudly and rubs against you!`,
-                `🐾 ${catName} does a cute little stretch and meows!`,
-                `😻 ${catName} brings you a toy as a gift!`,
-                `😴 ${catName} curls up in your lap for a nap!`,
-                `🧶 ${catName} wants to play with you right meow!`
+                `😺 ${catName} громко мурлычет и трётся о вас!`,
+                `🐾 ${catName} мило потягивается и мяукает!`,
+                `😻 ${catName} приносит вам игрушку в подарок!`,
+                `😴 ${catName} свернулся калачиком у вас на коленях!`,
+                `🧶 ${catName} хочет поиграть с вами прямо сейчас!`
             ];
             const randomResponse = responses[Math.floor(Math.random() * responses.length)];
             alert(randomResponse);
@@ -415,16 +400,16 @@
             if (isCorrect) {
                 element.style.background = '#28a745';
                 element.style.color = 'white';
-                element.innerHTML += ' ✅ Correct!';
+                element.innerHTML += ' ✅ Верно!';
                 happiness = Math.min(100, happiness + 30);
                 tasksCompleted++;
                 setTimeout(() => {
-                    alert('🎉 Fantastic! You really know your cat facts! +30 happiness!');
+                    alert('🎉 Отлично! Вы прекрасно знаете факты о котах! +30 к счастью!');
                 }, 500);
             } else {
                 element.style.background = '#dc3545';
                 element.style.color = 'white';
-                element.innerHTML += ' ❌ Try again!';
+                element.innerHTML += ' ❌ Попробуйте ещё!';
             }
             updateCounters();
         }
@@ -433,13 +418,13 @@
             if (challengeCompleted) return;
             
             if (location === hiddenCatLocation) {
-                document.getElementById('challengeResult').innerHTML = "🎉 <strong>FOUND ME!</strong> 😸 The cat was hiding in the box! You're a true cat detective! +50 happiness!";
+                document.getElementById('challengeResult').innerHTML = "🎉 <strong>НАШЁЛ МЕНЯ!</strong> 😸 Кот прятался в коробке! Вы настоящий кото-детектив! +50 к счастью!";
                 happiness = Math.min(100, happiness + 50);
                 tasksCompleted++;
                 challengeCompleted = true;
                 createCelebration();
             } else {
-                document.getElementById('challengeResult').innerHTML = "🔍 <strong>Not here!</strong> Keep looking... *meow* 🕵️";
+                document.getElementById('challengeResult').innerHTML = "🔍 <strong>Здесь нет!</strong> Ищите дальше... *мяу* 🕵️";
             }
             updateCounters();
         }

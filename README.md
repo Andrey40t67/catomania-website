@@ -1,2 +1,2 @@
 # catomania-website
-Catomania - The ultimate fun website about cats with interactive tasks and mega cool styling!
+Catomania - супер весёлый сайт о котах с интерактивными заданиями и стильным оформлением!
