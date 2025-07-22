@@ -3,6 +3,6 @@ Allow: /
 
 Sitemap: https://andrey40t67.github.io/catomania-website/sitemap.xml
 
-# Catomania - The Ultimate Cat Paradise Website
-# This robots.txt file ensures optimal indexing for search engines
-# Keywords: catomania, cats, cat games, interactive cat website, cat paradise
+# Катомания - лучший кошачий рай
+# Этот файл robots.txt помогает поисковым системам индексировать сайт
+# Ключевые слова: catomania, коты, игры с котами, интерактивный сайт, кошачий рай
