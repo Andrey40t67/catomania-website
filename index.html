@@ -211,6 +211,38 @@
             color: white;
         }
 
+        .cat-quotes {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px 0;
+            font-style: italic;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .cat-gif-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .cat-gif-gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .easter-egg {
+            display: none;
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -320,6 +352,33 @@
                 </div>
             </div>
         </section>
+
+        <section class="section">
+            <h2>💬 Famous Cat Quotes 💬</h2>
+            <div class="cat-quotes">
+                "Time spent with cats is never wasted." – Sigmund Freud
+            </div>
+            <div class="cat-quotes">
+                "In ancient times cats were worshipped as gods; they have not forgotten this." – Terry Pratchett
+            </div>
+            <div class="cat-quotes">
+                "Cats choose us; we don't own them." – Kristin Cast
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎬 Cat GIF Gallery 🎬</h2>
+            <div class="cat-gif-gallery">
+                <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Funny cat">
+                <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Cat typing">
+                <img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif" alt="Surprised cat">
+            </div>
+        </section>
+
+        <div id="easterEgg" class="easter-egg">
+            <h2>🌟 Secret Meow Mode Activated! 🌟</h2>
+            <p>You found the hidden cat! 😻 Enjoy this special moment.</p>
+        </div>
     </div>
 
     <footer>
@@ -464,6 +523,29 @@
             for (let i = 0; i < 10; i++) {
                 setTimeout(() => createFloatingCat(), i * 200);
             }
+        }
+
+        const secretSequence = ['m', 'e', 'o', 'w'];
+        let sequenceIndex = 0;
+
+        document.addEventListener('keydown', handleSecret);
+
+        function handleSecret(event) {
+            if (event.key.toLowerCase() === secretSequence[sequenceIndex]) {
+                sequenceIndex++;
+                if (sequenceIndex === secretSequence.length) {
+                    revealEasterEgg();
+                    sequenceIndex = 0;
+                }
+            } else {
+                sequenceIndex = 0;
+            }
+        }
+
+        function revealEasterEgg() {
+            const egg = document.getElementById('easterEgg');
+            egg.style.display = 'block';
+            createCelebration();
         }
 
         // Initialize floating cats
